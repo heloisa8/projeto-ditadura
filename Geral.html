@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquista das Mulheres - Linha do Tempo</title>
+    <!-- Incluindo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluindo Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #BB86B7;
+            color: #333;
+        }
+
+        header {
+            background-color: #704074;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #704074;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .timeline-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #704074;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #704074;
+            margin-bottom: 10px;
+        }
+
+        .timeline-img {
+            width: 150px; /* Largura fixa para a imagem */
+            height: 100px; /* Altura fixa */
+            object-fit: cover; /* Mantém a proporção da imagem */
+            border-radius: 8px;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .timeline-text {
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #704074;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 0 10px;
+            }
+            .timeline-item {
+                flex-direction: column; /* Empilha em telas menores */
+                align-items: flex-start; /* Alinha à esquerda */
+            }
+            .timeline-img {
+                margin-right: 0; /* Remove espaço quando empilhado */
+                margin-bottom: 10px; /* Espaço abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo da Conquista das Mulheres">
+    </div>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="Inicial.html">Voltar</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#leis">Leis</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#conquistas">Conquistas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#timeline">Linha do Tempo</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 class="text-center" style="color: #6A1B9A;">Mundo</h2>
+<section id="timeline" class="timeline">
+    
+    
+    <div class="timeline-item">
+        <img src="img/escola.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1827</div>
+            <p>A partir da Lei Geral - promulgada em 15 de Outubro de 1857 - é que mulheres foram autorizadas a ingressar nos colégios e estudassem além da escola primária
+                </p>
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <img src="img/seneca.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1848</div>
+            <p>Convenção de Seneca Falls, em Nova York, marca o início do movimento pelos direitos das mulheres nos EUA, com a Declaração de Sentimentos</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/jornal.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1852</div>
+            <p>Editado por mulheres e direcionado as mulheres, surgiu o Jomal das Senhoras, que afirmava que as pessoas do sexo feminino não deveriam executar afazeres do lar
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/susan.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1868</div>
+            <p>Susan Anthony e Elizabeth Cady fundam a National Woman Suffrage Association              
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/senhoras.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1879</div>
+            <p>Em 1879, as mulheres ganham o direito ao acesso as universidades           
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/jornal.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1910</div>
+            <p>O Partido Republicano Feminino reinvidica o direito ao voto e à emancipação feminina.           
+                </p>
+        </div>
+    </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/feminismo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1932</div>
+            <p>O sufrágio feminino foi garantido em 1952, graças a organização de movimentos feministas no inicio do século XX       
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/tortura.png" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1945</div>
+            <p>A Carta das Nações Unidas inclui a igualdade de direitos entre homens e mulheres. 
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/grupo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1960</div>
+            <p>A pilula anticoncepcional é aprovada, dando mais controle sobre a reprodução
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/maes.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1962</div>
+            <p>A promulgação da Lei nº 4.212/1962, foi permitido que as mulheres casadas não precisassem da autorização do marido para trabalhar.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/mulheres.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1977</div>
+            <p>Somente a partir da Lei nº 6,515/1977, promulgada em 26 de Dezembro, é que o divórcio se tornou uma opção legal.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1979</div>
+            <p>Um decreto estabelecido, deu liberdade a prática de futebol a mulheres.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1988</div>
+            <p>Aproximadamente 450 mulheres negras promovem diversos eventos em diferentes estados do Brasil para debater questões do feminismo negro.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2005</div>
+            <p>A ONU adota a Resolução 1325, que destaca a importância da participação das mulheres na paz e segurança.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2006</div>
+            <p>A Lei n° 11.340/2002 foi sancionada para combater a violência contra a mulher, e ganhou nome de Maria da Penha.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2015</div>
+            <p>A Constituição Federal reconhece a partir da Lei nº 13.104 o feminicídio como um crime de homicídio.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2017</div>
+            <p>A Marcha das Mulheres acontece em várias cidades do mundo, defendendo os direitos das mulheres e a igualdade de gênero.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2018</div>
+            <p>A partir da Lei nº 13.718/2018 o assédio passa a ser considerado crime no Brasil.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2020</div>
+            <p>Aumenta a visibilidade de questões como violência doméstica e direitos reprodutivos, com diversas campanhas online e protestos.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2021</div>
+            <p>Em muitos países, incluindo os EUA, começam a ocorrer debates intensos sobre o direito ao aborto, com algumas legislações sendo propostas para restringir esse direito.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2022</div>
+            <p>Após a morte de Mahsa Amini, mulheres iranianas lideram manifestações pedindo liberdade e igualdade, destacando questões de direitos humanos e feminismo.</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2023</div>
+            <p>Vários países começam a implementar ou discutir licenças parentais mais igualitárias, reconhecendo a importância da divisão de responsabilidades entre os gêneros.
+                </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Conquista das Mulheres. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Incluindo Bootstrap JS e dependências -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

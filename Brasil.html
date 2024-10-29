@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquista das Mulheres - Linha do Tempo</title>
+    <!-- Incluindo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluindo Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #BB86B7;
+            color: #333;
+        }
+
+        header {
+            background-color: #704074;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #704074;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .timeline-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #704074;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #704074;
+            margin-bottom: 10px;
+        }
+
+        .timeline-img {
+            width: 150px; /* Largura fixa para a imagem */
+            height: 100px; /* Altura fixa */
+            object-fit: cover; /* Mantém a proporção da imagem */
+            border-radius: 8px;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .timeline-text {
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #704074;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 0 10px;
+            }
+            .timeline-item {
+                flex-direction: column; /* Empilha em telas menores */
+                align-items: flex-start; /* Alinha à esquerda */
+            }
+            .timeline-img {
+                margin-right: 0; /* Remove espaço quando empilhado */
+                margin-bottom: 10px; /* Espaço abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo da Conquista das Mulheres">
+    </div>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="Inicial.html">Voltar</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#leis">Leis</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#conquistas">Conquistas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#timeline">Linha do Tempo</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 class="text-center" style="color: #6A1B9A;">Brasil</h2>
+<section id="timeline" class="timeline">
+    
+    
+    <div class="timeline-item">
+        <img src="img/ditadura.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1881</div>
+            <p>Educação: A primeira
+                escola normal para
+                meninas é fundada em
+                São Paulo, marcando o
+                início da inclusão
+                feminina na educação
+                formal.
+                </p>
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <img src="img/lurdes.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1888</div>
+            <p>Abolição da escravatura:
+                A Lei Áurea também
+                impactou as mulheres
+                negras, que lutavam por
+                liberdade e direitos.</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/anistia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1932</div>
+            <p>Direito ao voto: As
+                mulheres conquistam o
+                direito de votar nas
+                eleições, uma vitória
+                importante no
+                movimento feminista.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/eunice.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1943</div>
+            <p>Consolidação das Leis do
+                Trabalho (CLT): A CLT
+                assegura direitos
+                trabalhistas, incluindo
+                licença-maternidade                
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/zica.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1962</div>
+            <p>Código Civil: Reformas
+                garantem mais direitos
+                às mulheres, incluindo a
+                possibilidade de
+                trabalhar sem a
+                autorização do marido.               
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/jornal.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1975</div>
+            <p>Ano Internacional da
+                Mulher: O Brasil se
+                mobiliza em torno de
+                questões femininas, com
+                a criação de movimentos
+                que lutam por direitos e
+                igualdade              
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/conferencia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1988</div>
+            <p>Constituição Federal: A
+                nova constituição
+                garante igualdade de
+                direitos entre homens e
+                mulheres, e inclui a
+                proteção contra a
+                violência doméstica.            
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/feminismo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1995</div>
+            <p>Criação da Secretaria de
+                Políticas para as
+                Mulheres: Estabelece
+                políticas públicas
+                voltadas para a
+                promoção da igualdade
+                de gênero.          
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/tortura.png" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2006</div>
+            <p>Lei Maria da Penha: Esta
+                lei é um marco no
+                combate à violência
+                doméstica, criando
+                mecanismos para
+                proteger as mulheres.
+                       
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/grupo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2010</div>
+            <p>Política Nacional de
+                Combate à Violência
+                contra as Mulheres:
+                Lança uma série de
+                ações para enfrentar a
+                violência de gênero em
+                suas diversas formas.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/maes.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2015</div>
+            <p>Lei do Feminicídio:
+                Tipifica o assassinato de
+                mulheres por questões
+                de gênero como crime
+                hediondo, reforçando a
+                luta contra a violência.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/mulheres.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">2018</div>
+            <p>Movimento #EleNão:
+                Mobilizações contra a
+                violência de gênero e em
+                defesa dos direitos das
+                mulheres ganham
+                destaque na política
+                </p>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; 2024 Conquista das Mulheres. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Incluindo Bootstrap JS e dependências -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

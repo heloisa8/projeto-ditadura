@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquista das Mulheres - Linha do Tempo</title>
+    <!-- Incluindo Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluindo Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #BB86B7;
+            color: #333;
+        }
+
+        header {
+            background-color: #704074;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #704074;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .timeline-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #704074;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #704074;
+            margin-bottom: 10px;
+        }
+
+        .timeline-img {
+            width: 150px; /* Largura fixa para a imagem */
+            height: 100px; /* Altura fixa */
+            object-fit: cover; /* Mantém a proporção da imagem */
+            border-radius: 8px;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .timeline-text {
+            flex: 1; /* Faz o texto ocupar o espaço restante */
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #704074;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 0 10px;
+            }
+            .timeline-item {
+                flex-direction: column; /* Empilha em telas menores */
+                align-items: flex-start; /* Alinha à esquerda */
+            }
+            .timeline-img {
+                margin-right: 0; /* Remove espaço quando empilhado */
+                margin-bottom: 10px; /* Espaço abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo da Conquista das Mulheres">
+    </div>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="Inicial.html">Voltar</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#leis">Leis</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#conquistas">Conquistas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#timeline">Linha do Tempo</a></li>
+        </ul>
+    </nav>
+</header>
+<h2 class="text-center" style="color: #6A1B9A;">Ditadura Militar</h2>
+<section id="timeline" class="timeline">
+    
+    
+    <div class="timeline-item">
+        <img src="img/ditadura.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1964</div>
+            <p>O golpe militar resulta na
+                instauração do regime.
+                Mulheres começam a se
+                envolver em atividades
+                políticas e sociais, algumas nas
+                organizações de resistência.
+                </p>
+        </div>
+    </div>
+    
+    <div class="timeline-item">
+        <img src="img/lurdes.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1965</div>
+            <p>Maria de Lurdes e outras
+                mulheres criam a Comissão
+                de Mulheres pela Anistia,
+                que luta por justiça para os
+                perseguidos políticos..</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/anistia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1966</div>
+            <p>O Grupo de Mulheres pela
+                Anistia é fundado em São
+                Paulo, reunindo mães e
+                familiares de desaparecidos.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/eunice.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1970</div>
+            <p>Ato Institucional nº 5: O AI-5
+                intensifica a repressão.
+                Muitas mulheres são presas
+                e torturadas, como Eunice
+                Baía, que foi torturada na
+                prisão.                
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/zica.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1971</div>
+            <p>O assassinato de Dona Zica,
+                uma das líderes do
+                movimento de mães que
+                buscavam informações
+                sobre seus filhos
+                desaparecidos.               
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/jornal.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1971</div>
+            <p>Publicação do jornal
+                “MULHER”, que discute a
+                opressão das mulheres e
+                denuncia a repressão
+                política.              
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/conferencia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1974</div>
+            <p>A Primeira Conferência
+                Nacional dos Direitos da
+                Mulher é realizada,
+                destacando as demandas
+                por direitos e igualdade.            
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/feminismo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1975</div>
+            <p>Ano Internacional da Mulher:
+                Movimentos feministas se
+                mobilizam para promover
+                direitos humanos e denunciar
+                a repressão.          
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/tortura.png" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1980</div>
+            <p>O Grupo Tortura Nunca Mais
+                é criado, incluindo mulheres
+                que foram vítimas de
+                tortura. Eles começam a
+                documentar e denunciar os
+                abusos do regime.
+                       
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/grupo.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1981</div>
+            <p>Criação do Movimento de
+                Mulheres no Brasil, que
+                começa a organizar ações
+                em defesa dos direitos
+                humanos e sociais.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/maes.jpeg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1983</div>
+            <p>Mães de Maio: Mães de
+                desaparecidos começam a se
+                reunir, buscando justiça e
+                verdade sobre o destino de
+                seus filhos. Inspiradas pelo
+                exemplo argentino, elas
+                realizam atos públicos
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/mulheres.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1984</div>
+            <p>Diretas Já: Mulheres
+                participam ativamente das
+                manifestações pela
+                redemocratização,
+                organizando atos e
+                campanhas.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/democracia.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1985</div>
+            <p>Transição para a Democracia:
+                O fim da ditadura marca uma
+                nova fase para o ativismo
+                feminino, com a criação de
+                políticas voltadas para a
+                igualdade de gênero.
+                </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <img src="img/pequim.jpg" class="timeline-img" alt="Direito ao Voto">
+        <div class="timeline-text">
+            <div class="timeline-date">1995</div>
+            <p>Conferência Mundial sobre
+                Mulheres em Pequim: A
+                experiência das mulheres
+                durante a ditadura é discutida, e
+                suas vozes começam a ganhar
+                mais espaço nas políticas
+                públicas.
+                </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Conquista das Mulheres. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Incluindo Bootstrap JS e dependências -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
