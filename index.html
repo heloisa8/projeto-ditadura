@@ -167,6 +167,15 @@
 <footer>
     <p>&copy; 2024 Conquista das Mulheres. Todos os direitos reservados.</p>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const body = document.body;
+        body.classList.add('fade');
+        setTimeout(() => {
+            body.classList.add('show');
+        }, 50); // Atraso para permitir a transição
+    });
+</script>
 
 <!-- Incluindo Bootstrap JS e dependências -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
